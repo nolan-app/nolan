@@ -1,12 +1,11 @@
 import React from "react";
 
-import { Container } from '../../styles/Home'
+import { Container } from "../../styles/Home";
 
 function Home() {
     return (
         <Container>
-            <h1>nolan</h1>
-            <h4>know when and where</h4>
+            <h1>home</h1>
         </Container>
     );
 }

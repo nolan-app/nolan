@@ -1,5 +1,5 @@
 import React from "react";
-import Router from "./../../pages/Router";
+import Router from "../../pages/Router";
 import renderer from "react-test-renderer";
 
 it("renders Router component", () => {
