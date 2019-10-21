@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Home component 1`] = `
+Array [
+  <h1>
+    nolan
+  </h1>,
+  <h4>
+    know when and where
+  </h4>,
+]
+`;
