@@ -10,8 +10,8 @@ const Title = styled.h1`
 
 const NavbarStyle = createGlobalStyle`
     .navbar {
-        height: 90px;
         padding: 20px;
+        height: 90px;
         padding-top: 10px;
     }
     .search-col {
