@@ -9,8 +9,8 @@ function Router() {
         <>
             <BrowserRouter>
                 <Navbar />
-                <Home />
                 <GlobalStyle />
+                <Home />
             </BrowserRouter>
         </>
     );

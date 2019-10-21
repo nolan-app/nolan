@@ -2,6 +2,12 @@
     "name": "nolan",
     "version": "0.1.0",
     "private": true,
+    "authors": [
+        "Nicholas Segger (https://github.com/iamn5)",
+        "Osvaldo Margato (https://github.com/margato)"
+    ],
+    "homepage": "/",
+    "bugs": "https://github.com/nolan-app/nolan/issues",
     "dependencies": {
         "@types/jest": "24.0.19",
         "@types/node": "12.11.1",
