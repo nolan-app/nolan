@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import Home from "./Home/Home";
-import "./main.css";
+import GlobalStyle from "../styles/global"
 
 function Router() {
     return (
@@ -9,6 +9,8 @@ function Router() {
             <BrowserRouter>
                 <Home />
             </BrowserRouter>
+
+            <GlobalStyle />
         </>
     );
 }
