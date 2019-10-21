@@ -1,5 +1,5 @@
 orbs:
-    react: "nolan-frontend/react@dev:alpha"
+    react: "thefrontside/react@dev:alpha"
 version: 2.1
 workflows:
     push:
