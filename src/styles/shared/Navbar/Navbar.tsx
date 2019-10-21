@@ -10,7 +10,7 @@ const Title = styled.h1`
 
 const NavbarStyle = createGlobalStyle`
     .navbar {
-        height: 50px;
+        height: 90px;
         padding: 20px;
         padding-top: 10px;
     }

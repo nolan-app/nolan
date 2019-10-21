@@ -10,16 +10,16 @@ interface SearchFormProps extends FormComponentProps {
 
 const FormStyle = createGlobalStyle`
     .search {
-        padding: 15px !important;
+        padding: 15px;
     }
 
     .ant-input {
-        border: none !important;
-        font-size: 20px !important;
+        border: none;
+        font-size: 20px;
     }
     
     .ant-input:focus {
-        box-shadow: none !important;
+        box-shadow: none;
     }
     
 `;

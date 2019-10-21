@@ -6,6 +6,7 @@
         "Nicholas Segger (https://github.com/iamn5)",
         "Osvaldo Margato (https://github.com/margato)"
     ],
+    "homepage": "/",
     "bugs": "https://github.com/nolan-app/nolan/issues",
     "dependencies": {
         "@types/jest": "24.0.19",
