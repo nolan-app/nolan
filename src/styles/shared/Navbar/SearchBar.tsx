@@ -2,24 +2,30 @@ import React, { useState, FormEvent } from "react";
 import { createGlobalStyle } from "styled-components";
 import { Form, Input } from "antd";
 import { FormComponentProps } from "antd/es/form";
-import { isMobile } from "react-device-detect";
 
 interface SearchFormProps extends FormComponentProps {
-    showTitle: string;
+    searchValue: string;
 }
 
 const FormStyle = createGlobalStyle`
     .search {
-        padding: 15px;
+        text-align: center;
+        padding-left: 15px;
+        padding-right: 15px;
     }
-
     .ant-input {
         border: none;
         font-size: 20px;
+        border-radius: 5px;
+        background-color: rgba(196, 196, 196, 0.12);
     }
     
     .ant-input:focus {
         box-shadow: none;
+    }
+
+    .search-form-item{
+        margin-top: -10px;
     }
     
 `;
@@ -40,13 +46,9 @@ function SearchBarForm(props: SearchFormProps) {
                 <Form.Item className="search-form-item">
                     <Input
                         onChange={event => handleInput(event)}
-                        style={{ textAlign: "right" }}
+                        style={{ textAlign: "center" }}
                         size="large"
-                        placeholder={
-                            !isMobile
-                                ? "Search for movies and TV shows"
-                                : "Search"
-                        }
+                        placeholder={"Search for movies and TV shows"}
                     />
                 </Form.Item>
             </Form>

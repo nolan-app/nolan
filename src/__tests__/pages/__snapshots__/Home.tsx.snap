@@ -2,10 +2,12 @@
 
 exports[`renders Home component 1`] = `
 <div
-  className="sc-bdVaJa cubKnN"
+  className="sc-EHOje hQcNaV"
 >
-  <h1>
-    home
-  </h1>
+  <div
+    className="sc-bZQynM eeZdYR"
+  >
+    New Releases
+  </div>
 </div>
 `;

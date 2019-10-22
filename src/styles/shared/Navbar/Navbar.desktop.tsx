@@ -1,0 +1,60 @@
+import React from "react";
+import styled, { createGlobalStyle } from "styled-components";
+import { Row, Col } from "antd";
+import SearchBar from "./SearchBar";
+import { Title } from "./styles";
+import { Colors } from "./../";
+
+const NavbarStyle = createGlobalStyle`
+    .navbar {
+        padding: 20px;
+        height: 90px;
+        padding-top: 10px;
+        margin-bottom: 40px;
+    }
+    .search-col {
+        height: 100%; 
+        line-height: 90px;
+        margin-top: 35px;
+    }
+`;
+
+const AccountLink = styled.a`
+    font-size: 20px;
+    display: inline-block;
+    line-height: 90px;
+    padding-left: 10px;
+`;
+
+const AccountLinks = styled.div`
+    text-align: center;
+`;
+
+function NavbarDesktop() {
+    return (
+        <>
+            <NavbarStyle />
+            <Row className="navbar">
+                <Col sm={3} md={4} lg={4} xl={6}>
+                    <Title>Nolan</Title>
+                </Col>
+                <Col className="search-col" sm={12} md={11} lg={12} xl={12}>
+                    <SearchBar />
+                </Col>
+                <Col sm={9} md={8} lg={8} xl={6}>
+                    <AccountLinks>
+                        <AccountLink
+                            style={{ color: Colors.black, fontWeight: "bold" }}
+                        >
+                            Login
+                        </AccountLink>
+                        <AccountLink style={{ color: Colors.gray }}>
+                            Create New Account
+                        </AccountLink>
+                    </AccountLinks>
+                </Col>
+            </Row>
+        </>
+    );
+}
+export { NavbarDesktop };

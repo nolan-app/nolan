@@ -7,17 +7,17 @@ Array [
     style={Object {}}
   >
     <div
-      className="ant-col ant-col-xs-7 ant-col-sm-6 ant-col-md-6 ant-col-lg-6 ant-col-xl-6"
+      className="ant-col ant-col-sm-3 ant-col-md-4 ant-col-lg-4 ant-col-xl-6"
       style={Object {}}
     >
       <h1
-        className="sc-bwzfXH kEByft"
+        className="sc-bdVaJa bHpxuW"
       >
         Nolan
       </h1>
     </div>
     <div
-      className="ant-col search-col ant-col-xs-17 ant-col-sm-18 ant-col-md-18 ant-col-lg-18 ant-col-xl-18"
+      className="ant-col search-col ant-col-sm-12 ant-col-md-11 ant-col-lg-12 ant-col-xl-12"
       style={Object {}}
     >
       <form
@@ -45,7 +45,7 @@ Array [
                   placeholder="Search for movies and TV shows"
                   style={
                     Object {
-                      "textAlign": "right",
+                      "textAlign": "center",
                     }
                   }
                   type="text"
@@ -57,13 +57,45 @@ Array [
         </div>
       </form>
     </div>
+    <div
+      className="ant-col ant-col-sm-9 ant-col-md-8 ant-col-lg-8 ant-col-xl-6"
+      style={Object {}}
+    >
+      <div
+        className="sc-ifAKCX inzSPu"
+      >
+        <a
+          className="sc-bxivhb fmwmKI"
+          style={
+            Object {
+              "color": "#000",
+              "fontWeight": "bold",
+            }
+          }
+        >
+          Login
+        </a>
+        <a
+          className="sc-bxivhb fmwmKI"
+          style={
+            Object {
+              "color": "rgba(0,0,0,0.7)",
+            }
+          }
+        >
+          Create New Account
+        </a>
+      </div>
+    </div>
   </div>,
   <div
-    className="sc-bdVaJa cubKnN"
+    className="sc-EHOje hQcNaV"
   >
-    <h1>
-      home
-    </h1>
+    <div
+      className="sc-bZQynM eeZdYR"
+    >
+      New Releases
+    </div>
   </div>,
 ]
 `;
