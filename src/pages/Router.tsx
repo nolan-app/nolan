@@ -25,9 +25,9 @@ function Router() {
         <>
             <BrowserRouter>
                 {width < 822 ? <NavbarMobile /> : <NavbarDesktop />}
-                <GlobalStyle />
                 <Home width={width} />
             </BrowserRouter>
+            <GlobalStyle />
         </>
     );
 }

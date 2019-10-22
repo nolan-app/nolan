@@ -24,18 +24,18 @@ interface AccountLinkProps {
 }
 
 const AccountLink = styled.a<AccountLinkProps>`
-    &:hover, &:active {
+    &:hover,
+    &:active {
         color: ${props =>
             props.primary ? Colors.primary : Colors.secondary} !important;
     }
-    
+
     font-size: 20px;
     display: inline-block;
     line-height: 90px;
     margin-left: 10px;
-    color: ${props => (props.primary ? Colors.black : Colors.gray)}
-    font-weight: ${props => (props.primary ? "bold" : null)}
-    
+    color: ${props => (props.primary ? Colors.black : Colors.gray)};
+    font-weight: ${props => (props.primary ? "bold" : null)};
 `;
 
 const AccountLinks = styled.div`
