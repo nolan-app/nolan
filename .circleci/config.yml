@@ -2,9 +2,7 @@ version: 2
 jobs:
     build:
         docker:
-            - image: node:11.10.1
-
-        working_directory: ~/repo
+            - image: circleci/node:11.10.1
 
         steps:
             - checkout
@@ -25,5 +23,4 @@ jobs:
 
             # run tests!
             - run: yarn test
-            - run: yarn build
             # - run: yarn netlify:deploy
