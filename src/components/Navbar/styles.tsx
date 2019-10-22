@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Colors } from "./..";
+import { Colors } from "./../../styles";
 import { Icon } from "antd";
 
 export const Title = styled.h1`

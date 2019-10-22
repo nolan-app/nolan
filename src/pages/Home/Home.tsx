@@ -1,12 +1,17 @@
 import React from "react";
+import { Container, Title } from "./styles";
 
-import { Container, Title } from "../../styles/Home";
+interface HomeProps {
+    width: number;
+}
 
-function Home() {
+function Home(props: HomeProps) {
     return (
-        <Container>
-            <Title>New Releases</Title>
-        </Container>
+        <>
+            <Container width={props.width}>
+                <Title>New Releases</Title>
+            </Container>
+        </>
     );
 }
 
