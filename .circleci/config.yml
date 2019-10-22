@@ -6,7 +6,9 @@ jobs:
         steps:
             - checkout
             - restore_cache:
-                  key: dependency-cache-{{ checksum "package-lock.json" }}
+                  keys:
+                      - v1-dependencies-{{ checksum "package.json" }}
+                      - v1-dependencies-
             - run:
                   name: Install project dependencies
                   command: yarn install
@@ -19,7 +21,9 @@ jobs:
             - image: circleci/node:8.10.0
         steps:
             - checkout
-            - run: yarn test
+            - run:
+                  name: Execute unit tests
+                  command: yarn test
 workflows:
     version: 2
     install_and_test:
@@ -28,3 +32,6 @@ workflows:
             - test:
                   requires:
                       - install
+                  filters:
+                      branches:
+                      only: master
