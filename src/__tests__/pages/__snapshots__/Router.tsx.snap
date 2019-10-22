@@ -11,7 +11,7 @@ Array [
       style={Object {}}
     >
       <h1
-        className="sc-bdVaJa bHpxuW"
+        className="sc-htpNat gYQSzf"
       >
         Nolan
       </h1>
@@ -62,26 +62,15 @@ Array [
       style={Object {}}
     >
       <div
-        className="sc-ifAKCX inzSPu"
+        className="sc-bZQynM czlNrT"
       >
         <a
-          className="sc-bxivhb fmwmKI"
-          style={
-            Object {
-              "color": "#000",
-              "fontWeight": "bold",
-            }
-          }
+          className="sc-EHOje jJBdpb"
         >
           Login
         </a>
         <a
-          className="sc-bxivhb fmwmKI"
-          style={
-            Object {
-              "color": "rgba(0,0,0,0.7)",
-            }
-          }
+          className="sc-EHOje bhZWDX"
         >
           Create New Account
         </a>
@@ -89,10 +78,11 @@ Array [
     </div>
   </div>,
   <div
-    className="sc-EHOje hQcNaV"
+    className="sc-bdVaJa bDhinl"
+    width={1024}
   >
     <div
-      className="sc-bZQynM eeZdYR"
+      className="sc-bwzfXH phNPS"
     >
       New Releases
     </div>

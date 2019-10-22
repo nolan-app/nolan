@@ -1,8 +1,8 @@
 import React, { useState, useLayoutEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 import Home from "./Home/Home";
-import { NavbarDesktop, NavbarMobile } from "./../styles/shared/index";
-import GlobalStyle from "./../styles/global";
+import { NavbarDesktop, NavbarMobile } from "./../components/Navbar";
+import GlobalStyle from "../styles/Global";
 
 function Router() {
     function useWindowSize() {
@@ -26,7 +26,7 @@ function Router() {
             <BrowserRouter>
                 {width < 822 ? <NavbarMobile /> : <NavbarDesktop />}
                 <GlobalStyle />
-                <Home />
+                <Home width={width} />
             </BrowserRouter>
         </>
     );
