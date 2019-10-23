@@ -15,8 +15,6 @@ jobs:
       - run:
           name: Execute unit tests
           command: yarn test
-      - store_test_results:
-        path: test-results
 workflows:
   version: 2
   install_and_test:
