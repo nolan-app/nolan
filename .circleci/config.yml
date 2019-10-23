@@ -1,25 +1,25 @@
 version: 2
 jobs:
-    install:
-        docker:
-            - image: circleci/node:8.10.0
-        steps:
-            - run:
-                  name: Install project dependencies
-                  command: yarn install
-    test:
-        docker:
-            - image: circleci/node:8.10.0
-        steps:
-            - checkout
-            - run:
-                  name: Execute unit tests
-                  command: yarn test
+  install:
+    docker:
+      - image: circleci/node:8.10.0
+    steps:
+      - run:
+          name: Install project dependencies
+          command: yarn install
+  test:
+    docker:
+      - image: circleci/node:8.10.0
+    steps:
+      - checkout
+      - run:
+          name: Execute unit tests
+          command: yarn test
 workflows:
-    version: 2
-    install_and_test:
-        jobs:
+  version: 2
+  install_and_test:
+    jobs:
+      - install
+      - test:
+          requires:
             - install
-            - test:
-                  requires:
-                      - install
