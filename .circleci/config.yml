@@ -1,37 +1,25 @@
 version: 2
 jobs:
-    install:
-        docker:
-            - image: circleci/node:8.10.0
-        steps:
-            - checkout
-            - restore_cache:
-                  keys:
-                      - v1-dependencies-{{ checksum "package.json" }}
-                      - v1-dependencies-
-            - run:
-                  name: Install project dependencies
-                  command: yarn install
-            - save_cache:
-                  key: dependency-cache-{{ checksum "package-lock.json" }}
-                  paths:
-                      - node_modules
-    test:
-        docker:
-            - image: circleci/node:8.10.0
-        steps:
-            - checkout
-            - run:
-                  name: Execute unit tests
-                  command: yarn test
+  install:
+    docker:
+      - image: circleci/node:8.10.0
+    steps:
+      - run:
+          name: Install project dependencies
+          command: yarn install
+  test:
+    docker:
+      - image: circleci/node:8.10.0
+    steps:
+      - checkout
+      - run:
+          name: Execute unit tests
+          command: yarn test
 workflows:
-    version: 2
-    install_and_test:
-        jobs:
+  version: 2
+  install_and_test:
+    jobs:
+      - install
+      - test:
+          requires:
             - install
-            - test:
-                  requires:
-                      - install
-                  filters:
-                      branches:
-                      only: master

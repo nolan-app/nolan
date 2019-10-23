@@ -11,7 +11,7 @@ Array [
       style={Object {}}
     >
       <h1
-        className="sc-htpNat gYQSzf"
+        className="sc-htpNat cTQPgT"
       >
         Nolan
       </h1>
@@ -62,15 +62,15 @@ Array [
       style={Object {}}
     >
       <div
-        className="sc-bZQynM czlNrT"
+        className="sc-bZQynM hJohEA"
       >
         <a
-          className="sc-EHOje SuMAi"
+          className="sc-EHOje fPwFCi"
         >
           Login
         </a>
         <a
-          className="sc-EHOje jKdzBZ"
+          className="sc-EHOje gveWzK"
         >
           Create New Account
         </a>
@@ -78,11 +78,11 @@ Array [
     </div>
   </div>,
   <div
-    className="sc-bdVaJa bDhinl"
+    className="sc-bdVaJa kEmCtR"
     width={1024}
   >
     <div
-      className="sc-bwzfXH phNPS"
+      className="sc-bwzfXH bwoZoy"
     >
       New Releases
     </div>
