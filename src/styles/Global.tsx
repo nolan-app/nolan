@@ -1,9 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
   body {
     margin: 0;
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: -0.05em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
