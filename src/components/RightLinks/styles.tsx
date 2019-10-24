@@ -1,22 +1,22 @@
 import styled from 'styled-components';
-import {Colors} from '../../styles/Colors'
+import { Colors } from '../../styles/Colors'
 
-export const Container = styled.div`
+
+export const Title = styled.div`
   display: flex;
   text-align: center;
   justify-content: center;
-  
-  #title {
-    margin-top: 67px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 49px;
-    color: #000000;
-  }
 
+  margin-top: 43px;
+  margin-bottom: 34px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  color: #000000;
+`
+export const Container = styled.div`
   
-
 `
 
 interface AccountLinkProps {
