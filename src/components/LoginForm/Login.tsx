@@ -6,7 +6,7 @@ import { FormComponentProps } from 'antd/es/form';
 import { Container, inputStyle, buttonStyle } from './styles';
 import { CheckboxChangeEvent } from 'antd/lib/checkbox';
 
-interface LoginFormProps extends FormComponentProps {
+export interface ModalFormProps extends FormComponentProps {
   visible: boolean,
 }
 
@@ -19,7 +19,7 @@ function handleCheck(e: CheckboxChangeEvent) {
   }
 };
 
-function lForm(props : LoginFormProps) {
+function LForm(props : ModalFormProps) {
   const { getFieldDecorator, isFieldsTouched, resetFields } = props.form
   const { visible } = props;
 
@@ -33,10 +33,14 @@ function lForm(props : LoginFormProps) {
         <Form.Item style={{marginBottom: "15px"}}>
           {
             getFieldDecorator('username', { 
-              rules: [{ required: true, min: 4, max: 20, message: "Invalid username!" }]  //#TODO customized validator
+              rules: [
+                { required: true, message: "Please input your username!" },
+                { min: 4, max: 20, message: "Your username must have from 4 to 20 characters!" },
+              ]
             })(
               <Input
                 prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
+                placeholder={"Username"}
                 style={inputStyle}
               />
             )
@@ -45,11 +49,15 @@ function lForm(props : LoginFormProps) {
         <Form.Item style={{marginBottom: "0px"}}>
           {
             getFieldDecorator('password', {
-                rules: [{ required: true, min: 5, max: 20, message: 'Invalid password!' }],  //#TODO customized validator
+                rules: [
+                  { required: true, message: 'Please input your password!' },
+                  { min: 5, max: 20, message: 'Your password must have from 5 to 20 characters!' }
+                ],
               })(
                 <Input
                   prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
                   type="password"
+                  placeholder={"Password"}
                   style={inputStyle}
                 />
               )
@@ -68,5 +76,5 @@ function lForm(props : LoginFormProps) {
   );
 }
 
-const LoginForm = Form.create<LoginFormProps>({})(lForm);
+const LoginForm = Form.create<ModalFormProps>({})(LForm);
 export default LoginForm;

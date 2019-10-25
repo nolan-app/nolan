@@ -3,9 +3,14 @@ import { Modal } from 'antd';
 import LoginForm from '../LoginForm/Login';
 
 import { AccountLinks, AccountLink, Title } from './styles';
+import RegisterForm from '../RegisterForm/Register';
 
-const modalStyle: CSSProperties = {
-  height: "410px",
+const loginModalStyle: CSSProperties = {
+  height: "450px",
+}
+
+const regModalStyle: CSSProperties = {
+  height: "610px",
 }
 
 export default function RightLinks() {
@@ -27,7 +32,7 @@ export default function RightLinks() {
         onCancel={() => setLogin(false)}
         footer={null}
         centered={true}
-        bodyStyle={modalStyle}
+        bodyStyle={loginModalStyle}
         closable={false}
         width={400}
       >
@@ -40,12 +45,12 @@ export default function RightLinks() {
         onCancel={() => setRegister(false)}
         footer={null}
         centered={true}
-        bodyStyle={modalStyle}
+        bodyStyle={regModalStyle}
         closable={false}
         width={400}
       >
         <Title>Register</Title>
-        <LoginForm visible={register} />
+        <RegisterForm visible={register} />
       </Modal>
 
     </>
